@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://src/scenes/main_menu/options.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://src/scenes/main_menu/main_menu.gd" type="Script" id=3]
+[ext_resource path="res://assets/sound/music/LetsFun.ogg" type="AudioStream" id=4]
 
 [sub_resource type="StyleBoxEmpty" id=1]
 
@@ -14,6 +15,7 @@ custom_constants/margin_top = 100
 custom_constants/margin_left = 120
 custom_constants/margin_bottom = 100
 script = ExtResource( 3 )
+_music = ExtResource( 4 )
 
 [node name="Main" type="VBoxContainer" parent="."]
 margin_left = 120.0
@@ -134,29 +136,13 @@ margin_left = 64.0
 margin_right = 784.0
 margin_bottom = 16.0
 size_flags_horizontal = 3
+max_value = 1.0
+step = 0.1
 
-[node name="SoundBus" type="HBoxContainer" parent="Options"]
+[node name="MusicBus" type="HBoxContainer" parent="Options"]
 margin_top = 38.0
 margin_right = 784.0
 margin_bottom = 54.0
-
-[node name="Label" type="Label" parent="Options/SoundBus"]
-margin_top = 1.0
-margin_right = 60.0
-margin_bottom = 15.0
-rect_min_size = Vector2( 60, 0 )
-text = "Sound"
-
-[node name="HSlider" type="HSlider" parent="Options/SoundBus"]
-margin_left = 64.0
-margin_right = 784.0
-margin_bottom = 16.0
-size_flags_horizontal = 3
-
-[node name="MusicBus" type="HBoxContainer" parent="Options"]
-margin_top = 58.0
-margin_right = 784.0
-margin_bottom = 74.0
 
 [node name="Label" type="Label" parent="Options/MusicBus"]
 margin_top = 1.0
@@ -170,6 +156,28 @@ margin_left = 64.0
 margin_right = 784.0
 margin_bottom = 16.0
 size_flags_horizontal = 3
+max_value = 1.0
+step = 0.1
+
+[node name="SoundBus" type="HBoxContainer" parent="Options"]
+margin_top = 58.0
+margin_right = 784.0
+margin_bottom = 74.0
+
+[node name="Label" type="Label" parent="Options/SoundBus"]
+margin_top = 1.0
+margin_right = 60.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 60, 0 )
+text = "Sound"
+
+[node name="HSlider" type="HSlider" parent="Options/SoundBus"]
+margin_left = 64.0
+margin_right = 784.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.1
 
 [node name="HSeparator" type="HSeparator" parent="Options"]
 margin_top = 78.0
@@ -264,8 +272,8 @@ flat = true
 [connection signal="pressed" from="Main/Quit" to="Main/ReallyQuit" method="show"]
 [connection signal="pressed" from="Main/ReallyQuit" to="." method="_on_ReallyQuit_pressed"]
 [connection signal="value_changed" from="Options/MasterBus/HSlider" to="Options" method="_on_Master_value_changed"]
-[connection signal="value_changed" from="Options/SoundBus/HSlider" to="Options" method="_on_Sound_value_changed"]
 [connection signal="value_changed" from="Options/MusicBus/HSlider" to="Options" method="_on_Music_value_changed"]
+[connection signal="value_changed" from="Options/SoundBus/HSlider" to="Options" method="_on_Sound_value_changed"]
 [connection signal="toggled" from="Options/Fullscreen" to="Options" method="_on_Fullscreen_toggled"]
 [connection signal="toggled" from="Options/Vsync" to="Options" method="_on_Vsync_toggled"]
 [connection signal="pressed" from="Options/Button" to="Main" method="show"]

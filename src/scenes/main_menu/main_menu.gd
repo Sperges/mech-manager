@@ -14,7 +14,8 @@
 
 extends MarginContainer
 
-export(String, FILE) var _main_scene: String
+export(String, FILE) var _main_scene: String = "res://icon.png"
+export(AudioStream) var _music
 
 onready var _start_button: Button = $Main/Start
 onready var _continue_button: Button = $Main/Continue
@@ -27,13 +28,22 @@ func _ready():
 	if not File.new().file_exists("user://save.cfg"):
 		_continue_button.disabled = true
 
+	Music.stream = _music
+	Music.play()
+
 
 func _on_Start_pressed():
 	if not _main_scene:
-		printerr("No main scene selected.")
+		printerr(filename, ": Error, _main_scene uninitalized, no scene to change to.")
 		return
 
-	get_tree().change_scene(_main_scene)
+	var err = get_tree().change_scene(_main_scene)
+
+	match err:
+		ERR_CANT_OPEN:
+			printerr(filename, ": Error, can't open file ", _main_scene)
+		ERR_CANT_CREATE:
+			printerr(filename, ": Error, can't instantiate scene ", _main_scene)
 
 
 # Only pressed when a save file is available

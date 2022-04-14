@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/LetsFun.ogg-faa4af148ec97864d40c2081647f22ce.oggstr"
+
+[deps]
+
+source_file="res://assets/sound/music/LetsFun.ogg"
+dest_files=[ "res://.import/LetsFun.ogg-faa4af148ec97864d40c2081647f22ce.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
