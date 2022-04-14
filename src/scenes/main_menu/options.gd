@@ -11,7 +11,8 @@ onready var _vsync_button: CheckButton = $Vsync
 
 func _ready():
 	_update_ui_elements()
-	get_tree().connect("screen_resized", self, "_update_buttons")
+	# warning-ignore:return_value_discarded
+	get_tree().connect("screen_resized", self, "_update_ui_elements")
 
 
 func _on_Fullscreen_toggled(button_pressed: bool):
