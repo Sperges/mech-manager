@@ -1,6 +1,7 @@
 extends MarginContainer
 
 export(String, FILE) var _main_scene: String
+export(AudioStream) var _music
 
 onready var _start_button: Button = $Main/Start
 onready var _continue_button: Button = $Main/Continue
@@ -12,6 +13,9 @@ func _ready():
 	# To reconfigure when the save system has been implemented
 	if not File.new().file_exists("user://save.cfg"):
 		_continue_button.disabled = true
+
+	Music.stream = _music
+	Music.play()
 
 
 func _on_Start_pressed():
