@@ -23,7 +23,6 @@ func _on_Start_pressed():
 		printerr(filename, ": Error, _main_scene uninitalized, no scene to change to.")
 		return
 
-	# warning-ignore:return_value_discarded
 	var err = get_tree().change_scene(_main_scene)
 
 	match err:
