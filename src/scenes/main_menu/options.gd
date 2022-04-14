@@ -11,12 +11,9 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-<<<<<<< HEAD
-enum {MASTER_BUS, MUSIC_BUS, SOUND_BUS}
-=======
 extends VBoxContainer
->>>>>>> 3a3f72f1b83896f5cf63b8dfb11ab78b282cb623
+
+enum {MASTER_BUS, MUSIC_BUS, SOUND_BUS}
 
 onready var _master_slider: HSlider = $MasterBus/HSlider
 onready var _sound_slider: HSlider = $SoundBus/HSlider
