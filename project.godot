@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Resource",
+"class": "Mail",
+"language": "GDScript",
+"path": "res://src/scenes/mail/mail_class.gd"
+}, {
+"base": "HBoxContainer",
+"class": "VTabContainer",
+"language": "GDScript",
+"path": "res://src/scenes/vtab_container/vtab_container_class.gd"
+} ]
+_global_script_class_icons={
+"Mail": "res://src/scenes/mail/mail.svg",
+"VTabContainer": "res://src/scenes/vtab_container/vtab_container.svg"
+}
+
 [application]
 
 config/name="Mech Manager"
