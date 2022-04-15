@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "HBoxContainer",
+"class": "VTabContainer",
+"language": "GDScript",
+"path": "res://src/scenes/vtab_container/vtab_container_class.gd"
+} ]
+_global_script_class_icons={
+"VTabContainer": "res://src/scenes/vtab_container/vtab_container.svg"
+}
+
 [application]
 
 config/name="Mech Manager"
