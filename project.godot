@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Object",
+"class": "TimeStamp",
+"language": "GDScript",
+"path": "res://src/scenes/time_stamp/time_stamp_class.gd"
+} ]
+_global_script_class_icons={
+"TimeStamp": ""
+}
+
 [application]
 
 config/name="Mech Manager"
