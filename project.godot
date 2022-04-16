@@ -10,11 +10,17 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Object",
+"class": "Event",
+"language": "GDScript",
+"path": "res://src/scenes/event/event_class.gd"
+}, {
+"base": "Object",
 "class": "TimeStamp",
 "language": "GDScript",
 "path": "res://src/scenes/time_stamp/time_stamp_class.gd"
 } ]
 _global_script_class_icons={
+"Event": "",
 "TimeStamp": ""
 }
 
@@ -27,6 +33,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Music="*res://src/autoloads/music.gd"
+Scheduler="*res://src/autoloads/scheduler.gd"
 
 [physics]
 
