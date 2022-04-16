@@ -13,7 +13,7 @@
 # limitations under the License.
 
 tool
-class_name VTabContainer, "vtab_container.svg"
+class_name VTabContainer, "res://assets/icons/vtab_container.svg"
 extends HBoxContainer
 
 signal contents_modified

@@ -15,7 +15,7 @@ _global_script_classes=[ {
 "path": "res://src/scenes/vtab_container/vtab_container_class.gd"
 } ]
 _global_script_class_icons={
-"VTabContainer": "res://src/scenes/vtab_container/vtab_container.svg"
+"VTabContainer": "res://assets/icons/vtab_container.svg"
 }
 
 [application]
