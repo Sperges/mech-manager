@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Resource",
+"class": "Mail",
+"language": "GDScript",
+"path": "res://src/scenes/mail/mail_class.gd"
+}, {
 "base": "HBoxContainer",
 "class": "VTabContainer",
 "language": "GDScript",
@@ -20,6 +25,7 @@ _global_script_classes=[ {
 "path": "res://src/scenes/time_stamp/time_stamp_class.gd"
 } ]
 _global_script_class_icons={
+"Mail": "res://src/scenes/mail/mail.svg",
 "VTabContainer": "res://assets/icons/vtab_container.svg",
 "TimeStamp": ""
 }
