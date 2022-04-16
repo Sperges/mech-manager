@@ -37,6 +37,7 @@ func delete_event(event: Event, time: TimeStamp) -> void:
 	_schedule[date].erase(event)
 
 	if _schedule[date].empty():
+		# warning-ignore:return_value_discarded
 		_schedule.erase(date)
 
 
