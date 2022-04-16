@@ -26,7 +26,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Mail": "res://src/scenes/mail/mail.svg",
-"VTabContainer": "res://src/scenes/vtab_container/vtab_container.svg",
+"VTabContainer": "res://assets/icons/vtab_container.svg",
 "TimeStamp": ""
 }
 
