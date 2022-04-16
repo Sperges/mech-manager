@@ -14,20 +14,20 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/scenes/mail/mail_class.gd"
 }, {
-"base": "HBoxContainer",
-"class": "VTabContainer",
-"language": "GDScript",
-"path": "res://src/scenes/vtab_container/vtab_container_class.gd"
-}, {
 "base": "Object",
 "class": "TimeStamp",
 "language": "GDScript",
 "path": "res://src/scenes/time_stamp/time_stamp_class.gd"
+}, {
+"base": "HBoxContainer",
+"class": "VTabContainer",
+"language": "GDScript",
+"path": "res://src/scenes/vtab_container/vtab_container_class.gd"
 } ]
 _global_script_class_icons={
 "Mail": "res://src/scenes/mail/mail.svg",
-"VTabContainer": "res://assets/icons/vtab_container.svg",
-"TimeStamp": ""
+"TimeStamp": "",
+"VTabContainer": "res://assets/icons/vtab_container.svg"
 }
 
 [application]

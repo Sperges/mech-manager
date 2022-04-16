@@ -87,7 +87,7 @@ func _on_Contents_modified(node: Node) -> void:
 	emit_signal("contents_modified")
 
 func _on_Contents_removed(node: Node) -> void:
-	if not content_container.is_a_parent_of(node):
+	if not content_container.get_children().has(node):
 		return
 
 	content_container.hide()
