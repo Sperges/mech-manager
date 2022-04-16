@@ -98,7 +98,7 @@ func get_season() -> int:
 
 
 func date() -> String:
-	return "%s %d/%d %d:00 " % [DAY_OF_WEEK[get_day()], get_week(), get_season(), get_hour()]
+	return "%s %d/%d %d:00" % [DAY_OF_WEEK[get_day()], get_week(), get_season(), get_hour()]
 
 
 func get_day_of_week() -> String:
