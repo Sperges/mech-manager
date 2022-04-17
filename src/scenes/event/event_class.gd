@@ -14,3 +14,6 @@
 
 class_name Event
 extends Object
+
+func execute():
+	pass
