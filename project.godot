@@ -34,6 +34,7 @@ config/icon="res://icon.png"
 
 Music="*res://src/autoloads/music.gd"
 Scheduler="*res://src/autoloads/scheduler.gd"
+NameGenerator="*res://src/autoloads/name_generator.gd"
 
 [physics]
 
