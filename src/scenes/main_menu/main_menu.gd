@@ -30,6 +30,7 @@ func _ready():
 
 	Music.stream = _music
 	Music.play()
+	print(NameGenerator.new().get_id())
 
 
 func _on_Start_pressed():
