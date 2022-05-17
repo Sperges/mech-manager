@@ -131,7 +131,7 @@ func get_nickname():
 
 
 func get_suffix() -> String:
-	if randf() > 0.33:
+	if randf() > 0.15:
 		return ""
 
 	var type: String
