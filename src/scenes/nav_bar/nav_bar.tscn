@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/scenes/vtab_container/vtab_container_class.gd" type="Script" id=1]
+[ext_resource path="res://src/scenes/mailbox/mailbox.tscn" type="PackedScene" id=2]
 
 [node name="Navbar" type="MarginContainer"]
 anchor_right = 1.0
@@ -71,16 +72,13 @@ custom_constants/margin_top = 20
 custom_constants/margin_left = 20
 custom_constants/margin_bottom = 20
 
-[node name="Label" type="Label" parent="VBoxContainer/Content/Windows/Mailbox"]
+[node name="Mailbox" parent="VBoxContainer/Content/Windows/Mailbox" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
 margin_left = 20.0
-margin_top = 243.0
+margin_top = 20.0
 margin_right = 856.0
-margin_bottom = 257.0
-text = "Home"
-align = 1
-__meta__ = {
-"_editor_description_": "Temporary, to be removed"
-}
+margin_bottom = 480.0
 
 [node name="Schedule" type="MarginContainer" parent="VBoxContainer/Content/Windows"]
 visible = false
@@ -142,12 +140,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.0
 margin_right = -4.0
-margin_bottom = -4.0
+margin_bottom = -12.0
 
 [node name="Label5" type="Label" parent="VBoxContainer/Content/Windows/Pilots"]
-margin_top = 247.0
+margin_top = 243.0
 margin_right = 876.0
-margin_bottom = 261.0
+margin_bottom = 257.0
 text = "Pilot"
 align = 1
 __meta__ = {

@@ -13,6 +13,3 @@
 # limitations under the License.
 
 extends MarginContainer
-
-
-export(Resource) var lmao
