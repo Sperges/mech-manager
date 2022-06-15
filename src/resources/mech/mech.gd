@@ -14,3 +14,6 @@
 
 class_name Mech
 extends Resource
+
+
+export (float) var weight := 0
