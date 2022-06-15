@@ -12,8 +12,5 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-class_name Event
-extends Object
-
-func execute():
-	pass
+class_name Engineer
+extends Resource

@@ -15,6 +15,9 @@ custom_constants/margin_top = 100
 custom_constants/margin_left = 120
 custom_constants/margin_bottom = 100
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 _music = ExtResource( 4 )
 
 [node name="Main" type="VBoxContainer" parent="."]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mail.svg-153789afc44c63caae7b88f5f846f7d5.stex"
+path="res://.import/mail.svg-e38e5d0c90c82578bb7dd967bbbd1cd7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://src/scenes/mail/mail.svg"
-dest_files=[ "res://.import/mail.svg-153789afc44c63caae7b88f5f846f7d5.stex" ]
+source_file="res://src/resources/mail/mail.svg"
+dest_files=[ "res://.import/mail.svg-e38e5d0c90c82578bb7dd967bbbd1cd7.stex" ]
 
 [params]
 

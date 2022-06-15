@@ -1,20 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/scenes/vtab_container/vtab_container_class.gd" type="Script" id=1]
 [ext_resource path="res://src/scenes/mailbox/mailbox.gd" type="Script" id=2]
-[ext_resource path="res://src/scenes/mail/mail_class.gd" type="Script" id=3]
 [ext_resource path="res://src/scenes/mailbox/message.tscn" type="PackedScene" id=4]
-
-[sub_resource type="Resource" id=1]
-script = ExtResource( 3 )
-type = 0
-title = ""
-sender = ""
-date = ""
-body = ""
-footer = ""
-tooltip = ""
-rich_text = false
 
 [node name="Mailbox" type="MarginContainer"]
 anchor_right = 1.0
@@ -43,6 +31,5 @@ margin_left = 4.0
 margin_top = 8.0
 margin_right = -4.0
 margin_bottom = -4.0
-mail = SubResource( 1 )
 
 [connection signal="ok_pressed" from="VTabContainer/TabContainer/Message" to="VTabContainer/TabContainer/Message" method="queue_free"]

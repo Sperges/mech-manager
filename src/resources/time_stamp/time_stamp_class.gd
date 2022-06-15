@@ -13,7 +13,7 @@
 # limitations under the License.
 
 class_name TimeStamp
-extends Object
+extends Resource
 
 enum {
 	HOURS_IN_DAY = 24,
