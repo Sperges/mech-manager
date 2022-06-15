@@ -14,3 +14,8 @@
 
 class_name Component
 extends Resource
+
+var id := 0
+var manufacturer_id := 0
+var name := ""
+var weight := 0.0

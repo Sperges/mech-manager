@@ -15,5 +15,8 @@
 class_name Mech
 extends Resource
 
-
-export (float) var weight := 0
+var id := 0
+var name := "unnamed_mech"
+var owner_id := 0
+var pilot_id := 0
+var weight := 0.0

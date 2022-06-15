@@ -40,6 +40,11 @@ _global_script_classes=[ {
 "path": "res://src/scenes/name_generator/name_generator.gd"
 }, {
 "base": "Resource",
+"class": "PersonalInfo",
+"language": "GDScript",
+"path": "res://src/resources/personal_info/personal_info.gd"
+}, {
+"base": "Resource",
 "class": "Pilot",
 "language": "GDScript",
 "path": "res://src/resources/pilot/pilot.gd"
@@ -66,6 +71,7 @@ _global_script_class_icons={
 "Mail": "res://src/resources/mail/mail.svg",
 "Mech": "",
 "NameGenerator": "",
+"PersonalInfo": "",
 "Pilot": "",
 "Team": "",
 "TimeStamp": "",

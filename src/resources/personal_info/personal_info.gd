@@ -12,12 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-class_name Team
+class_name PersonalInfo
 extends Resource
 
-var id = 0
-var name := ""
-var component_ids := []
-var engineer_ids := []
-var mech_ids := []
-var pilot_ids := []
+var first_name := ""
+var last_name := ""
+var nickname := ""
+var suffix := ""
+var titles := {}
+
+var nation := ""
+var birthplace := ""
+
+var is_retired := false
+

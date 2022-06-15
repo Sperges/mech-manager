@@ -14,3 +14,10 @@
 
 class_name Pilot
 extends Resource
+
+var personal_info := PersonalInfo.new()
+var aim := 0
+var awareness := 0
+var grit := 0
+var reflexes := 0
+var tactics := 0

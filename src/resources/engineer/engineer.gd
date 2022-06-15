@@ -14,3 +14,7 @@
 
 class_name Engineer
 extends Resource
+
+var personal_info := PersonalInfo.new()
+var design := 0
+var repair := 0
